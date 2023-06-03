@@ -9,7 +9,8 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   margin-top: 42px;
-  button {
+  
+  h1 {
     width: 159px;
     height: 49px;
     font-size: 32px;

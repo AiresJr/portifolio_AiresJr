@@ -10,6 +10,9 @@ export const StyledDiv = styled.div`
   width: 100%;
   background-color: #fffdfd;
   margin-top: 300px;
+  .reveal {
+    visibility: hidden;
+  }
 
   h1 {
     font-weight: 700;
@@ -30,6 +33,10 @@ export const StyledUl = styled.ul`
   justify-content: space-around;
   max-width: 910px;
   width: 100%;
+  :hover {
+    transform: scale3d(1.1, 1.1, 1);
+    transition: 1s;
+  }
 `;
 
 export const StyldLi = styled.li`
@@ -37,4 +44,5 @@ export const StyldLi = styled.li`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ 
 `;

@@ -1,6 +1,8 @@
+import { Footer } from "../../components/footer";
 import { Frameworks } from "../../components/frameworks";
 import { Header } from "../../components/header";
 import { Introduction } from "../../components/introduction";
+import { Projects } from "../../components/projects";
 
 export const Home = () => {
   return (
@@ -8,6 +10,8 @@ export const Home = () => {
       <Header />
       <Introduction />
       <Frameworks/>
+      <Projects/>
+      <Footer/>
     </>
   );
 };

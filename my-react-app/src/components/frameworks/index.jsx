@@ -4,8 +4,15 @@ import html5 from "../../assets/html5.svg";
 import js from "../../assets/js.svg";
 import typescript from "../../assets/typescript.svg";
 import { StyldLi, StyledDiv, StyledUl } from "./styles";
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from "react";
 
 export const Frameworks = () => {
+  
+  useEffect(() => {
+    ScrollReveal().reveal('.reveal', { duration: 3000, reset: true  });
+  }, []);
+
   const listFrameworks = [
     {
       id: 1,
@@ -13,29 +20,32 @@ export const Frameworks = () => {
       img: html5,
     },
     {
-        id: 2,
-        name: "CSS",
-        img: css,
+      id: 2,
+      name: "CSS",
+      img: css,
     },
     {
-        id: 3,
-        name: "JavaScript",
-        img: js,
+      id: 3,
+      name: "JavaScript",
+      img: js,
     },
     {
-        id: 4,
-        name: "TypeScript",
-        img: typescript,
+      id: 4,
+      name: "TypeScript",
+      img: typescript,
     },
     {
       id: 5,
       name: "React.Js",
       img: reactjs,
     },
-];
+  ];
+
+
 
   return (
-    <StyledDiv>
+   
+    <StyledDiv className="reveal">
       <h1>Linguagens e Frameworks</h1>
       <StyledUl>
         {listFrameworks.map((framework) => (
@@ -46,5 +56,6 @@ export const Frameworks = () => {
         ))}
       </StyledUl>
     </StyledDiv>
+     
   );
 };
