@@ -45,7 +45,7 @@ export const Frameworks = () => {
 
   return (
    
-    <StyledDiv className="reveal">
+    <StyledDiv className="reveal" id="hability">
       <h1>Linguagens e Frameworks</h1>
       <StyledUl>
         {listFrameworks.map((framework) => (

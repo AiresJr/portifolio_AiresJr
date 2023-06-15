@@ -1,3 +1,4 @@
+import { Contact } from "../../components/contact";
 import { Footer } from "../../components/footer";
 import { Frameworks } from "../../components/frameworks";
 import { Header } from "../../components/header";
@@ -11,6 +12,7 @@ export const Home = () => {
       <Introduction />
       <Frameworks/>
       <Projects/>
+      <Contact/>
       <Footer/>
     </>
   );

@@ -16,14 +16,14 @@ export const Projects = () => {
     {
       id: 1,
       name: "Hamburgueria",
-      img: gitsearch,
+      img: hamburgueria,
       linkDeploy: "https://hamburgueria-ten-eosin.vercel.app",
       linkGitHub: "https://github.com/AiresJr/react-entrega-template-hamburgueria-da-kenzie_AiresJr",
     },
     {
       id: 2,
       name: "GitSearch",
-      img: hamburgueria,
+      img: gitsearch,
       linkDeploy: "https://git-search-wheat.vercel.app",
       linkGitHub: "https://github.com/AiresJr/-Kenzie-Academy-Brasil-Developers-gitSearchBase_AiresJr",
     },
@@ -44,7 +44,7 @@ export const Projects = () => {
   ];
 
   return (
-    <StyledDiv className="reveal">
+    <StyledDiv className="reveal" id="projects">
       <h1>Meus Projetos</h1>
       <StyledUl>
         {listProjects.map((project) => (

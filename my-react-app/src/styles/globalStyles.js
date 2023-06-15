@@ -17,7 +17,7 @@ export const Global = createGlobalStyle`
     border: none;
     list-style: none;
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   body,html{
     width: 100vw;
@@ -26,7 +26,7 @@ export const Global = createGlobalStyle`
   }
   body {
     overflow-x: hidden;
-    background: #161616;
+    background: #061645;
   }
 
   button{
